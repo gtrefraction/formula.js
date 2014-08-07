@@ -187,7 +187,7 @@ suite('Date & Time', function() {
     dateTime.YEARFRAC('1/1/1900', '1/2/1900', 1).should.be.equal(0.0027397260273972603);
     dateTime.YEARFRAC('1/1/1904', '1/1/1905', 1).should.be.equal(1);
     dateTime.YEARFRAC('5/1/1903', '5/1/1904', 1).should.be.equal(1);
-    dateTime.YEARFRAC('1/1/1903', '5/1/1904', 1).should.be.equal(1.3295713634290924);
+    dateTime.YEARFRAC('1/1/1903', '5/1/1904', 1).should.be.approximately(1.3296, 10e-4);
     dateTime.YEARFRAC('1/1/1904', '1/2/1904', 1).should.be.equal(0.00273224043715847);
 
     dateTime.YEARFRAC('1/1/1900', '1/2/1900', 2).should.be.equal(0.002777777777777778);

@@ -56,7 +56,7 @@ suite('Math & Trig', function() {
   });
 
   test('ASIN', function() {
-    mathTrig.ASIN(0.5).should.equal(0.5235987755982989);
+    mathTrig.ASIN(0.5).should.be.approximately(0.523598775598299, 0.000000000000001);
   });
 
   test('ASINH', function() {
